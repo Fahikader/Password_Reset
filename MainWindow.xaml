@@ -1,0 +1,30 @@
+﻿<Window x:Class="Password_reset.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Password Brute Force" Height="350" Width="525">
+    <Grid>
+        <StackPanel Margin="10">
+            <Grid>
+                <TextBox x:Name="PasswordTextBox" Width="200" Margin="0,0,0,10"/>
+                <TextBlock x:Name="PasswordPlaceholder" Text="Enter Password"
+                           IsHitTestVisible="False"
+                           Foreground="Gray"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Left"
+                           Margin="5,0,0,0"/>
+            </Grid>
+            <Button Content="Create and Encrypt Password" Click="CreatePassword_Click" Width="200" Margin="0,0,0,10"/>
+            <Grid>
+                <TextBox x:Name="ThreadCountTextBox" Width="200" Margin="0,0,0,10"/>
+                <TextBlock x:Name="ThreadCountPlaceholder" Text="Enter Thread Count"
+                           IsHitTestVisible="False"
+                           Foreground="Gray"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Left"
+                           Margin="5,0,0,0"/>
+            </Grid>
+            <Button Content="Start Brute Force Attack" Click="StartAttack_Click" Width="200" Margin="0,0,0,10"/>
+            <TextBlock x:Name="ResultTextBlock" Margin="0,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
